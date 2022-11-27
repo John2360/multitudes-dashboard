@@ -35,7 +35,8 @@ function MapTile(props) {
     return (
         <div style={{ height: '100%', minHeight: '700px', width: '100%' }}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: env.GoogleMapsAPI }}
+                // bootstrapURLKeys={{ key: env.GoogleMapsAPI }}
+                bootstrapURLKeys={{ key: process.env.GoogleMapsAPI }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
                 options={createMapOptions}
