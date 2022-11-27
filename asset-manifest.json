@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/multitudes-dashboard/static/css/main.c0915298.css",
-    "main.js": "/multitudes-dashboard/static/js/main.1cec68c7.js",
+    "main.js": "/multitudes-dashboard/static/js/main.770348f5.js",
     "static/media/location.png": "/multitudes-dashboard/static/media/location.c6706a7890bc009474a6.png",
     "index.html": "/multitudes-dashboard/index.html",
     "main.c0915298.css.map": "/multitudes-dashboard/static/css/main.c0915298.css.map",
-    "main.1cec68c7.js.map": "/multitudes-dashboard/static/js/main.1cec68c7.js.map"
+    "main.770348f5.js.map": "/multitudes-dashboard/static/js/main.770348f5.js.map"
   },
   "entrypoints": [
     "static/css/main.c0915298.css",
-    "static/js/main.1cec68c7.js"
+    "static/js/main.770348f5.js"
   ]
 }
