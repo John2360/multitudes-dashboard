@@ -1,4 +1,3 @@
-// AIzaSyChrFM-128zsLznW38n8toC8Olq70loVYY
 import React from 'react'
 import GoogleMapReact from 'google-map-react';
 import env from "react-dotenv";
@@ -36,7 +35,7 @@ function MapTile(props) {
         <div style={{ height: '100%', minHeight: '700px', width: '100%' }}>
             <GoogleMapReact
                 // bootstrapURLKeys={{ key: env.GoogleMapsAPI }}
-                bootstrapURLKeys={{ key: process.env.GoogleMapsAPI }}
+                bootstrapURLKeys={{ key: "AIzaSyChrFM-128zsLznW38n8toC8Olq70loVY" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
                 options={createMapOptions}
