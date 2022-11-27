@@ -1,5 +1,4 @@
 import React from 'react'
-import ComputerIcon from '@mui/icons-material/Computer';
 
 function DataTile(props) {
     const {icon, title, stat, goal, percent, color } = props;
@@ -17,7 +16,7 @@ function DataTile(props) {
                 </div>
                 <div className='column' style={{width: "30%", justifyContent: 'flex-start', gap: 0}}>
                     <div className='data-tile-icon'>
-                        <ComputerIcon sx={{width: '100%', height: '100%', fontWeight: 100, color: '#052049'}} />
+                        {icon}
                     </div>
                 </div>
             </div>

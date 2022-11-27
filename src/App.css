@@ -43,6 +43,11 @@ html {
     font-weight: 100;
 }
 
+.text-icon {
+    font-size: 3rem;
+    line-height: 0px;
+}
+
 .stat-title {
     /* padding: 10px; */
     font-size: 1.1rem;
@@ -84,4 +89,11 @@ html {
     background-size: cover;
 
     /* border: white 2px solid; */
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

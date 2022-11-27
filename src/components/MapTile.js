@@ -2,10 +2,9 @@ import React from 'react'
 import GoogleMapReact from 'google-map-react';
 import env from "react-dotenv";
 
-
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 // const MapMarker = () => <LocationOnIcon className='map-marker' sx={{ fontSize: "60px" }}></LocationOnIcon>;
+
 const MapMarker = () => <div className='map-marker'></div>;
 
 
@@ -34,8 +33,7 @@ function MapTile(props) {
     return (
         <div style={{ height: '100%', minHeight: '700px', width: '100%' }}>
             <GoogleMapReact
-                // bootstrapURLKeys={{ key: env.GoogleMapsAPI }}
-                bootstrapURLKeys={{ key: "AIzaSyChrFM-128zsLznW38n8toC8Olq70loVY" }}
+                bootstrapURLKeys={{ key: env.GoogleMapsAPI == undefined ? process.env.GOOGLEMAPSAPI : env.GoogleMapsAPI }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
                 options={createMapOptions}
