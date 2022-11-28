@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/multitudes-dashboard/static/css/main.8faf1a2c.css",
-    "main.js": "/multitudes-dashboard/static/js/main.fa65063d.js",
+    "main.css": "/multitudes-dashboard/static/css/main.6e54c0e0.css",
+    "main.js": "/multitudes-dashboard/static/js/main.4227900e.js",
     "static/media/cta-bg.jpg": "/multitudes-dashboard/static/media/cta-bg.6eaf72262195b62e8f8d.jpg",
     "static/media/fireworks.gif": "/multitudes-dashboard/static/media/fireworks.de719edebb81b4b412cf.gif",
     "static/media/ucsf-logo.jpg": "/multitudes-dashboard/static/media/ucsf-logo.be93b563c8aca3dfe0f8.jpg",
     "static/media/location.png": "/multitudes-dashboard/static/media/location.c6706a7890bc009474a6.png",
     "index.html": "/multitudes-dashboard/index.html",
-    "main.8faf1a2c.css.map": "/multitudes-dashboard/static/css/main.8faf1a2c.css.map",
-    "main.fa65063d.js.map": "/multitudes-dashboard/static/js/main.fa65063d.js.map"
+    "main.6e54c0e0.css.map": "/multitudes-dashboard/static/css/main.6e54c0e0.css.map",
+    "main.4227900e.js.map": "/multitudes-dashboard/static/js/main.4227900e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8faf1a2c.css",
-    "static/js/main.fa65063d.js"
+    "static/css/main.6e54c0e0.css",
+    "static/js/main.4227900e.js"
   ]
 }
