@@ -117,7 +117,7 @@ html {
 .cta-wrapper {
     position: relative;
 
-    width: 1250px;
+    width: auto;
     height: 320px;
 
     padding: 20px;
@@ -134,6 +134,8 @@ html {
     gap: 40px;
 
     align-items: center;
+
+    transform: scale(.5);
 }
 
 .cta-wrapper > h1 {
