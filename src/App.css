@@ -135,12 +135,12 @@ html {
 
     align-items: center;
 
-    transform: scale(.5);
+    overflow: hidden;
 }
 
 .cta-wrapper > h1 {
     color: white;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
 
     z-index: 1;

@@ -8,7 +8,7 @@ function CallToAction() {
             <StatTile title={"Total Multitudes Sessions"} stat={"2,237"} />
             <StatTile title={"Number of Active Proctors"} stat={"288"} />
             <div className='fireworks'></div>
-            <div className='fireworks' style={{right: '490px', top: '-60px'}}></div>
+            {/* <div className='fireworks' style={{right: '490px', top: '-60px'}}></div> */}
         </div>
     )
 }
