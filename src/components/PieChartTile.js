@@ -5,7 +5,7 @@ function PieChartTile(props) {
     const { title } = props;
 
     const defaultLabelStyle = {
-        fontSize: '7px',
+        fontSize: '4px',
         fontFamily: 'sans-serif',
         fill: 'white',
       };
@@ -21,9 +21,13 @@ function PieChartTile(props) {
                     </div>
                     <PieChart
                         data={[
-                            { title: 'One', value: 10, color: colors[0] },
-                            { title: 'Two', value: 15, color: colors[1] },
-                            { title: 'Three', value: 20, color: colors[4] },
+                            { title: 'Black', value: 2.526842103, color: colors[0] },
+                            { title: 'Native American', value: 2.389209144, color: colors[1] },
+                            { title: 'Asian', value: 10.50394862, color: colors[4] },
+                            { title: 'Hispanic', value: 47.6733276, color: colors[5] },
+                            { title: 'White', value: 25.17355784, color: colors[6] },
+                            { title: 'Pacific', value: 0.280840648, color: colors[7] },
+                            { title: 'Multiple', value: 5.844459276, color: colors[8] },
                         ]}
                         label={({ dataEntry }) => dataEntry.title}
                         style={{height: '380px'}}

@@ -26,20 +26,24 @@ function Dashboard() {
     return (
         <Container sx={{p: 10}} className="container">
             <div className="row" style={{gap: '0px', height: 'auto'}}>
-                <div className='column' style={{width: "60%", flexDirection: 'row', flexWrap: 'wrap', display: `${page == 1 ? "flex" : "none"}`}}>
+                <div className='column' style={{width: "60%",  display: `${page == 1 ? "flex" : "none"}`}}>
                     <DoubleDataTile title={"Total Multitudes Sessions"} stat={"2,237"} goal={"3,600"} percent={2237/3600} color={green} icon={<Equalizer sx={IconStyle}/>} />
-                    <DataTile title={"English Language Screener Sessions"} stat={"1,585"} goal={"3,600"} percent={1585/3600} color={blue} icon={<h2 sx={IconStyle} className='text-icon'>EN</h2>} />
-                    <DataTile  title={"Spanish Language Screener Sessions"} stat={"782"} goal={"1,200"} percent={782/1200} color={green} icon={<h2 sx={IconStyle} className='text-icon'>ES</h2>} />
-                    <DataTile  title={"Number of Active Proctors"} stat={"288"} goal={"288"} percent={1} color={green} icon={<People sx={IconStyle}/>} />
-                    <DataTile  title={"Number of Fidelity Tested Proctors"} stat={"200"} goal={"600"} percent={.33} color={red} icon={<MilitaryTech sx={IconStyle}/>} />
+                    <div style={{display: 'flex', flexDirection: 'row', gap: 20}}>
+                        <DataTile title={"English Language Screener Sessions"} stat={"1,585"} goal={"3,600"} percent={1585/3600} color={blue} icon={<h2 sx={IconStyle} className='text-icon'>EN</h2>} />
+                        <DataTile  title={"Spanish Language Screener Sessions"} stat={"782"} goal={"1,200"} percent={782/1200} color={green} icon={<h2 sx={IconStyle} className='text-icon'>ES</h2>} />
+                    </div>
                 </div>
                 <div className='column' style={{width: "60%", flexDirection: 'row', flexWrap: 'wrap', display: `${page == 2 ? "flex" : "none"}`}}>
                     <DataTile title={"Total Number of Schools"} stat={"37"} goal={"40"} percent={37/40} color={green} icon={<School sx={IconStyle}/>}/>
                     <DataTile  title={"Number of Dual Language Schools"} stat={"2,000"} goal={"4,000"} percent={0.80} color={green} icon={<Language sx={IconStyle}/>}/>
                     <PieChartTile title={"All School Race Ethnicity Breakdown"} />
                 </div>
-                <div className='column' style={{width: "60%", flexDirection: 'row', flexWrap: 'wrap', display: `${page == 3 ? "flex" : "none"}`}}>
+                <div className='column' style={{width: "60%", display: `${page == 3 ? "flex" : "none"}`}}>
                     <DoubleDataTile title={"Total Number of iPads"} stat={"2,000"} goal={"4,000"} percent={0.60} color={blue} icon={<TabletMac sx={IconStyle}/>} />
+                    <div style={{display: 'flex', flexDirection: 'row', gap: 20}}>
+                        <DataTile  title={"Number of Active Proctors"} stat={"288"} goal={"288"} percent={1} color={green} icon={<People sx={IconStyle}/>} />
+                        <DataTile  title={"Fidelity Tested and Passed Proctors"} stat={"200"} goal={"600"} percent={.33} color={red} icon={<MilitaryTech sx={IconStyle}/>} />
+                    </div>
                 </div>
                 <div className='column' style={{width: "40%", position: "relative"}}>
                     <MapTile data={data["schools"]} api_key={api_key} />
