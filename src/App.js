@@ -1,5 +1,7 @@
 import React from 'react'
+import env from "react-dotenv";
 import './App.css';
+
 
 import Container from '@mui/material/Container';
 import Pagination from '@mui/material/Pagination';
@@ -22,6 +24,8 @@ function App() {
     const handleChange = (event, value) => {
         setPage(value);
     };
+    const api_key = process.env.REACT_APP_GOOGLE_KEY;
+    console.log(api_key);
 
     return (
         <Container sx={{p: 10}} className="container">
@@ -42,7 +46,7 @@ function App() {
                     <DoubleDataTile title={"Total Number of iPads"} stat={"2,000"} goal={"4,000"} percent={0.60} color={blue} icon={<TabletMac sx={IconStyle}/>} />
                 </div>
                 <div className='column' style={{width: "40%"}}>
-                    <MapTile data={data["schools"]} />
+                    <MapTile data={data["schools"]} api_key={api_key} />
                 </div>
             </div>
             <div className='footer'>

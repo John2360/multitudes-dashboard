@@ -1,6 +1,5 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react';
-import env from "react-dotenv";
 
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 // const MapMarker = () => <LocationOnIcon className='map-marker' sx={{ fontSize: "60px" }}></LocationOnIcon>;
@@ -9,7 +8,7 @@ const MapMarker = () => <div className='map-marker'></div>;
 
 
 function MapTile(props) {
-    const { data } = props;
+    const { data, api_key } = props;
 
     const createMapOptions = (maps) => {
         return {
@@ -33,7 +32,7 @@ function MapTile(props) {
     return (
         <div style={{ height: '100%', minHeight: '700px', width: '100%' }}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: env.GoogleMapsAPI == undefined ? process.env.GOOGLEMAPSAPI : env.GoogleMapsAPI }}
+                bootstrapURLKeys={{ key: api_key }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
                 options={createMapOptions}
