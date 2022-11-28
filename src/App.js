@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Dashboard from './components/Dashboard';
 import CallToAction from './components/CallToAction';
@@ -7,15 +6,14 @@ import CallToAction from './components/CallToAction';
 import './App.css';
 
 function App() {
+    const queryParams = new URLSearchParams(window.location.search);
+    const isCTA = queryParams.get('cta') != undefined;
 
-    return (
-        <Router>
-            <Routes>
-                <Route path="/cta" element={<CallToAction />} />
-                <Route path="*" element={<Dashboard />} />
-            </Routes>
-        </Router>
-    );
+    if (isCTA) {
+        return <CallToAction />
+    } else {
+        return <Dashboard />
+    }
 }
 
 export default App;
