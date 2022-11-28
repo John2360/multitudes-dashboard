@@ -18,7 +18,27 @@ function MapTile(props) {
           fullscreenControl: false,
           scaleControl: false,
           zoomControl: false,
-          styles: [{ stylers: [{ 'saturation': -300 }, { 'gamma': 0.8 }] }]
+          styles: [
+                { elementType: "geometry", stylers: [{ color: "#f2f2f2" }] },
+                {
+                    featureType: "water",
+                    elementType: "geometry.fill",
+                    stylers: [{ color: "#b0acb4" }],
+                  },
+                { stylers: [{ 'saturation': -300 }, { 'gamma': 0.8 }] },
+                { elementType: "labels.text.fill", stylers: [{ color: "#000000" }] },
+                {
+                    featureType: "administrative.country",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#000000" }],
+                  },
+                  {
+                    featureType: "administrative.province",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#000000" }],
+                  },
+
+            ]
         }
       }
     const defaultProps = {

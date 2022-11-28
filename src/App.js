@@ -25,7 +25,6 @@ function App() {
         setPage(value);
     };
     const api_key = process.env.REACT_APP_GOOGLE_KEY;
-    console.log(api_key);
 
     return (
         <Container sx={{p: 10}} className="container">
@@ -45,8 +44,9 @@ function App() {
                 <div className='column' style={{width: "60%", flexDirection: 'row', flexWrap: 'wrap', display: `${page == 3 ? "flex" : "none"}`}}>
                     <DoubleDataTile title={"Total Number of iPads"} stat={"2,000"} goal={"4,000"} percent={0.60} color={blue} icon={<TabletMac sx={IconStyle}/>} />
                 </div>
-                <div className='column' style={{width: "40%"}}>
+                <div className='column' style={{width: "40%", position: "relative"}}>
                     <MapTile data={data["schools"]} api_key={api_key} />
+                    <div className='ucsf-logo'></div>
                 </div>
             </div>
             <div className='footer'>
